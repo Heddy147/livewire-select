@@ -6,11 +6,13 @@
         'styles' => $styles,
     ])
 
-    @include($searchOptionsContainer, [
-        'options' => $options,
-        'emptyOptions' => $emptyOptions,
-        'isSearching' => $isSearching,
-        'styles' => $styles,
-    ])
+    @if($searchTerm)
+        @include($searchOptionsContainer, [
+            'options' => $options,
+            'emptyOptions' => $emptyOptions,
+            'isSearching' => $isSearching,
+            'styles' => $styles,
+        ])
+    @endif
 
 </div>
