@@ -12,7 +12,7 @@
     </div>
 
     <div x-data="{
-        isOpen: true,
+        isOpen: false,
         selectedIndex: -1,
         selectUp(component) {
             if (this.selectedIndex === 0) {
